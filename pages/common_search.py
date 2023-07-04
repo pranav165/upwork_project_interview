@@ -1,5 +1,5 @@
 from utils.pagebase import PageBase
-
+from utils.general_utils import log_to_console
 
 class BaseSearchPage(PageBase):
     search_input = "name@@q"
@@ -26,8 +26,8 @@ class BaseSearchPage(PageBase):
         :param locator_description - element representing short desc of the result
         """
         results = self._parse_attributes(locator_results, locator_title, locator_url, locator_description)
-        print("The third search result is  ---->")
-        print(results[2].text)
+        log_to_console("The third search result is  ---->")
+        log_to_console(results[2].text)
 
     def _parse_attributes(self, locator_results=None, locator_title=None, locator_url=None, locator_description=None):
         self.wait_till_element_is_present(locator_results, timeout=10)
