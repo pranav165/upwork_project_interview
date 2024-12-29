@@ -2,14 +2,15 @@
 import os
 
 # Configure Timeouts (Seconds)
-GLOBAL_TIMEOUT = 1
+GLOBAL_TIMEOUT = 5
 IMPLICIT_WAIT = 1
+PERFORMANCE = True
 
+# URLS
+APP_URL = "http://cloudtwo.cloud-vms.com/sign-in"
 # Paths
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-# Settings for testing Teams App
-IS_CHAT_INITIATOR = True
-MICROSOFT_TEAMS_USERNAME = ""
-MICROSOFT_TEAMS_PASSWORD = ""
-TEAMS_CONTACT_USERNAME = ""
+# Settings for testing
+USERNAME = "dev@testing.com"
+PASSWORD = "123456"

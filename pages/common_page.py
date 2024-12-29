@@ -1,7 +1,7 @@
 from utils.pagebase import PageBase
 from utils.general_utils import log_to_console
 
-class BaseSearchPage(PageBase):
+class CommonPage(PageBase):
     search_input = "name@@q"
     next_page = "xpath@@//a[@aria-label='Page 2']"
 
