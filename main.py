@@ -36,4 +36,4 @@ if __name__ == '__main__':
     app_page.sleep_in_seconds(2)
     app_page.review_alert()
     log_to_console("Successfully verified Alert has review status as True")
-    app_page.sleep_in_seconds(10)
+    app_page.sleep_in_seconds(5)
